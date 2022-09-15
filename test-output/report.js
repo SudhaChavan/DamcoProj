@@ -1,0 +1,108 @@
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("./src/main/java/Features/Email.feature");
+formatter.feature({
+  "line": 1,
+  "name": "Email Page Validation",
+  "description": "",
+  "id": "email-page-validation",
+  "keyword": "Feature"
+});
+formatter.scenario({
+  "line": 5,
+  "name": "Verify the Email Page",
+  "description": "",
+  "id": "email-page-validation;verify-the-email-page",
+  "type": "scenario",
+  "keyword": "Scenario",
+  "tags": [
+    {
+      "line": 4,
+      "name": "@Testing1"
+    }
+  ]
+});
+formatter.step({
+  "line": 6,
+  "name": "user is on the HomePage of the temp email site",
+  "keyword": "Given "
+});
+formatter.step({
+  "line": 7,
+  "name": "user Generate temporary email and copy the same using copy button.",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 8,
+  "name": "Go to your Gmail and send an email on this temporary email.",
+  "keyword": "When "
+});
+formatter.step({
+  "line": 9,
+  "name": "Go back to the site https://temp-mail.org/en/",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 10,
+  "name": "Click to the newly received mail.",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 11,
+  "name": "Verify the Subject and Body of email",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 12,
+  "name": "Take a screenshot of the Email.",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "Emaill.user_is_on_the_HomePage_of_the_temp_email_site()"
+});
+formatter.result({
+  "duration": 49324893349,
+  "status": "passed"
+});
+formatter.match({
+  "location": "Emaill.user_Generate_temporary_email_and_copy_the_same_using_copy_button()"
+});
+formatter.result({
+  "duration": 40708484220,
+  "error_message": "org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of all elements located by By.xpath: //*[@id\u003d\"mail\"] (tried for 30 second(s) with 500 milliseconds interval)\nBuild info: version: \u00274.1.1\u0027, revision: \u0027e8fcc2cecf\u0027\nSystem info: host: \u0027SUDHACHAVAN\u0027, ip: \u0027192.168.1.104\u0027, os.name: \u0027Windows 8.1\u0027, os.arch: \u0027amd64\u0027, os.version: \u00276.3\u0027, java.version: \u002712.0.2\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.102, chrome: {chromedriverVersion: 104.0.5112.79 (3cf3e8c8a07d..., userDataDir: C:\\Users\\SUDHA_~1\\AppData\\L...}, goog:chromeOptions: {debuggerAddress: localhost:14231}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:14231/devtoo..., se:cdpVersion: 105.0.5195.102, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 2afddad3c47faac75646df564912a73e\r\n\tat org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:138)\r\n\tat org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)\r\n\tat StepDefination.Emaill.user_Generate_temporary_email_and_copy_the_same_using_copy_button(Emaill.java:35)\r\n\tat ✽.And user Generate temporary email and copy the same using copy button.(./src/main/java/Features/Email.feature:7)\r\n",
+  "status": "failed"
+});
+formatter.match({
+  "location": "Emaill.go_to_your_Gmail_and_send_an_email_on_this_temporary_email()"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.match({
+  "location": "Emaill.go_back_to_the_site_https_temp_mail_org_en()"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.match({
+  "location": "Emaill.click_to_the_newly_received_mail()"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.match({
+  "location": "Emaill.verify_the_Subject_and_Body_of_email()"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.match({
+  "location": "Emaill.take_a_screenshot_of_the_Email()"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.after({
+  "duration": 25051333013,
+  "error_message": "org.openqa.selenium.WebDriverException: Timed out waiting for driver server to stop.\nBuild info: version: \u00274.1.1\u0027, revision: \u0027e8fcc2cecf\u0027\nSystem info: host: \u0027SUDHACHAVAN\u0027, ip: \u0027192.168.1.104\u0027, os.name: \u0027Windows 8.1\u0027, os.arch: \u0027amd64\u0027, os.version: \u00276.3\u0027, java.version: \u002712.0.2\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [2afddad3c47faac75646df564912a73e, quit {}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.102, chrome: {chromedriverVersion: 104.0.5112.79 (3cf3e8c8a07d..., userDataDir: C:\\Users\\SUDHA_~1\\AppData\\L...}, goog:chromeOptions: {debuggerAddress: localhost:14231}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:14231/devtoo..., se:cdpVersion: 105.0.5195.102, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 2afddad3c47faac75646df564912a73e\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:132)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:598)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.quit(RemoteWebDriver.java:439)\r\n\tat org.openqa.selenium.chromium.ChromiumDriver.quit(ChromiumDriver.java:287)\r\n\tat StepDefination.Mmt.close_the_browser(Mmt.java:176)\r\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\r\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:567)\r\n\tat cucumber.runtime.Utils$1.call(Utils.java:40)\r\n\tat cucumber.runtime.Timeout.timeout(Timeout.java:16)\r\n\tat cucumber.runtime.Utils.invoke(Utils.java:34)\r\n\tat cucumber.runtime.java.JavaHookDefinition.execute(JavaHookDefinition.java:60)\r\n\tat cucumber.runtime.Runtime.runHookIfTagsMatch(Runtime.java:224)\r\n\tat cucumber.runtime.Runtime.runHooks(Runtime.java:212)\r\n\tat cucumber.runtime.Runtime.runAfterHooks(Runtime.java:206)\r\n\tat cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:46)\r\n\tat cucumber.runtime.junit.ExecutionUnitRunner.run(ExecutionUnitRunner.java:102)\r\n\tat cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:63)\r\n\tat cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:18)\r\n\tat org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)\r\n\tat org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)\r\n\tat org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:413)\r\n\tat cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:70)\r\n\tat cucumber.api.junit.Cucumber.runChild(Cucumber.java:95)\r\n\tat cucumber.api.junit.Cucumber.runChild(Cucumber.java:38)\r\n\tat org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)\r\n\tat org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)\r\n\tat org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:413)\r\n\tat cucumber.api.junit.Cucumber.run(Cucumber.java:100)\r\n\tat org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:89)\r\n\tat org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:41)\r\n\tat org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:541)\r\n\tat org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:763)\r\n\tat org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:463)\r\n\tat org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:209)\r\nCaused by: java.util.concurrent.ExecutionException: org.openqa.selenium.TimeoutException: Process timed out after waiting for 20000 ms.\nBuild info: version: \u00274.1.1\u0027, revision: \u0027e8fcc2cecf\u0027\nSystem info: host: \u0027SUDHACHAVAN\u0027, ip: \u0027192.168.1.104\u0027, os.name: \u0027Windows 8.1\u0027, os.arch: \u0027amd64\u0027, os.version: \u00276.3\u0027, java.version: \u002712.0.2\u0027\nDriver info: driver.version: unknown\r\n\tat java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:395)\r\n\tat java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2093)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:128)\r\n\t... 45 more\r\nCaused by: org.openqa.selenium.TimeoutException: Process timed out after waiting for 20000 ms.\nBuild info: version: \u00274.1.1\u0027, revision: \u0027e8fcc2cecf\u0027\nSystem info: host: \u0027SUDHACHAVAN\u0027, ip: \u0027192.168.1.104\u0027, os.name: \u0027Windows 8.1\u0027, os.arch: \u0027amd64\u0027, os.version: \u00276.3\u0027, java.version: \u002712.0.2\u0027\nDriver info: driver.version: unknown\r\n\tat org.openqa.selenium.os.OsProcess.waitFor(OsProcess.java:174)\r\n\tat org.openqa.selenium.os.CommandLine.waitFor(CommandLine.java:127)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.lambda$execute$2(DriverCommandExecutor.java:122)\r\n\tat java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1771)\r\n\tat java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)\r\n\tat java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)\r\n\tat java.base/java.lang.Thread.run(Thread.java:835)\r\n",
+  "status": "failed"
+});
+});
